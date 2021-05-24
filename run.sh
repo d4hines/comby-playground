@@ -30,4 +30,4 @@ comby "$COMBY_M" "$COMBY_R" -rule "$COMBY_RULE" -f .txt ./output -in-place
 
 sed -i -e 's/^!//' output
 
-sed -i -e 's/^/F (97f0af384), /' output
+sed -i -e 's/^/G (5f95d773f), /' output

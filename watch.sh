@@ -1,0 +1,1 @@
+watchexec -c -w input -w run.sh ./run.sh

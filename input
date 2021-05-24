@@ -1,0 +1,39 @@
+Entering directory '/data/marigold-benchmarks/tezos'
+Entering directory '/data/marigold-benchmarks/tezos'
+Dexter_xtzToToken:get_script Gas consumed: 46290.934
+Dexter_xtzToToken:type_script Gas consumed: 2858.898
+Dexter_xtzToToken:parse_data Gas consumed: 59.810
+Dexter_xtzToToken:evaluation Gas consumed: 10434.645
+FA1.2_Transfer:get_script Gas consumed: 10589.076
+FA1.2_Transfer:type_script Gas consumed: 587.959
+FA1.2_Transfer:parse_data Gas consumed: 117.440
+FA1.2_Transfer:evaluation Gas consumed: 885.572
+FA1.2_Approve:get_script Gas consumed: 10589.076
+FA1.2_Approve:type_script Gas consumed: 587.959
+FA1.2_Approve:parse_data Gas consumed: 59.440
+FA1.2_Approve:evaluation Gas consumed: 574.968
+Fact:get_script Gas consumed: 1461.242
+Fact:type_script Gas consumed: 21.380
+Fact:parse_data Gas consumed: 0.240
+Fact:evaluation Gas consumed: 160.496
+Estimated testing time 2m40s (16 benchmarks x 10s). Change using '-quota'.
+┌────────────────────────────────┬────────────────┬─────────────┬────────────┬────────────┬────────────┐
+│ Name                           │       Time/Run │     mWd/Run │   mjWd/Run │   Prom/Run │ Percentage │
+├────────────────────────────────┼────────────────┼─────────────┼────────────┼────────────┼────────────┤
+│ Fact: get_script               │    13_206.95ns │   8_158.00w │     10.16w │     10.16w │      1.02% │
+│ Fact: type_script              │     5_406.85ns │   9_222.00w │     18.59w │     18.59w │      0.42% │
+│ Fact: parse_data               │       457.13ns │     658.00w │      0.11w │      0.11w │      0.04% │
+│ Fact: Evaluation               │   105_263.71ns │ 173_884.00w │     37.16w │     37.16w │      8.12% │
+│ FA1.2_Approve: get_script      │    74_663.63ns │  36_515.00w │    933.38w │    933.38w │      5.76% │
+│ FA1.2_Approve: type_script     │   194_846.50ns │ 186_062.00w │  5_461.49w │  5_461.49w │     15.03% │
+│ FA1.2_Approve: parse_data      │     7_930.62ns │   5_405.00w │      4.47w │      4.47w │      0.61% │
+│ FA1.2_Approve: Evaluation      │    15_741.06ns │  15_322.00w │      7.92w │      7.92w │      1.21% │
+│ FA1.2_Transfer: get_script     │    74_526.53ns │  36_515.00w │    928.76w │    928.76w │      5.75% │
+│ FA1.2_Transfer: type_script    │   193_149.97ns │ 186_062.00w │  5_478.59w │  5_478.59w │     14.90% │
+│ FA1.2_Transfer: parse_data     │    12_410.49ns │   6_964.00w │      5.85w │      5.85w │      0.96% │
+│ FA1.2_Transfer: Evaluation     │    33_123.05ns │  35_602.00w │     20.45w │     20.45w │      2.56% │
+│ Dexter_xtzToToken: get_script  │   479_838.33ns │ 145_832.00w │ 19_598.13w │ 18_300.13w │     37.03% │
+│ Dexter_xtzToToken: type_script │ 1_295_982.16ns │ 847_820.00w │ 59_122.80w │ 59_122.80w │    100.00% │
+│ Dexter_xtzToToken: parse_data  │    10_125.37ns │   7_075.00w │      6.32w │      6.32w │      0.78% │
+│ Dexter_xtzToToken: Evaluation  │   100_336.55ns │  74_136.00w │    973.03w │    973.03w │      7.74% │
+└────────────────────────────────┴────────────────┴─────────────┴────────────┴────────────┴────────────┘
